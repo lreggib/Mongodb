@@ -7,6 +7,8 @@ KS_OPS: comma separated list (from currentOp.type)
 KS_MILLISEC_RUNNING: number of milliseconds since the operation began
 """
 CONN_URI = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.4:3333,10.51.102.5:3333,10.51.102.6:3333/tsdb?authSource=admin&replicaSet=big"
+KS_OPS = {"insert","delete"}
+KS_MILLISEC_RUNNING = 1000
 
 
 import os
