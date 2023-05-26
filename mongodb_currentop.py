@@ -1,65 +1,69 @@
 #!/usr/bin/env python3
 
-KS_OPS = {"insert","delete"}
-KS_MILLISEC_RUNNING = 1000
-
-
-import os
+import os,sys
 import pymongo
-import logging
-import json
-from bson.json_util import dumps as bson_to_json
+import logging,time
+PATH=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(PATH)
+from ding import dingError
 
-logging.basicConfig(
-    format="%(asctime)s  %(levelname)s: %(message)s", level=logging.DEBUG
-)
+logging.basicConfig(level=logging.DEBUG,
+                    format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
+                    datefmt='%a, %d %b %Y %H:%M:%S',
+                    filename=time.strftime("%Y-%m-%d.log", time.localtime()),
+                    filemode='a')
 
 def main():
-    logging.info("Connecting...")
-    client = pymongo.MongoClient(
-        os.getenv("KS_CONN_URI"), serverSelectionTimeoutMS=10000
-    )
+    info = []
+    with open("mongodb.toml",'r') as f:        
+        for l in f:
+            if any(s in l for s in ["labels","mongodb_uri"]):
+                info.append(l.strip())
 
-    try:
-        client.server_info()
-        logging.info("Connection Successful.")
-    except Exception as e:
-        logging.error("Connection Failed.")
-        logging.error(e)
+    i = 0
+    while i < len(info)//2:
+        lables = info[2*i]
+        mongodb_uri = info[2*i+1]
+        i+=1
 
-    admin_db = client.get_database("admin")
+        try:
+            client = pymongo.MongoClient(mongodb_uri,serverSelectionTimeoutMS=10000
+            )
 
-    allowed_namespaces = [
-        item.strip() for item in str(os.getenv("KS_NAMESPACES")).split(",")
-    ]
-    allowed_ops = [item.strip() for item in str(os.getenv("KS_OPS")).split(",")]
-
-    query = [
-        {"$currentOp": {"allUsers": True, "idleSessions": True}},
-        {
-            "$match": {
-                "active": True,
-                "microsecs_running": {
-                    "$gte": int(os.getenv("KS_MILLISEC_RUNNING", 10000)) * 1000
+            query = [
+                {"$currentOp": {"allUsers": True, "idleSessions": True}},
+                {
+                    "$match": {
+                        "active": True,
+                        "secs_running": {
+                            "$gte": 5
+                        },
+                        "ns": {"$ne": "admin.$cmd"},
+                        # "op": {"$in": allowed_ops},
+                    }
                 },
-                "ns": {"$in": allowed_namespaces},
-                "op": {"$in": allowed_ops},
-            }
-        },
-    ]
+            ]
 
-    logging.info("currentOp query: \n%s\n" % json.dumps(query))
+            with client.admin.aggregate(query) as cursor:
+                for op in cursor:
+                    msg = '''
+【Mongodb 慢语句】
+currentOpTime = %s
+opid = %d
+secs_running = %d
+op = %s
+ns = %s
+command = %s
+                    ''' % (op['currentOpTime'],op['opid'],op['secs_running'],op['op'],op['ns'],op['command'])
+                    # print(msg)
+                    dingError(msg)
 
-    ops = admin_db.aggregate(query)
-    count = 0
-    for op in ops:
-        res = admin_db.command({"killOp": 1, "op": op["opid"]})
-        logging.info("killed: %s" % bson_to_json({"op": op, "kill": res}))
+                    # res = client.command({"killOp": 1, "op": op["opid"]})
 
-        count += 1
-
-    logging.info("ops found: %d" % count)
+        except Exception as e:
+            logging.error(e)
 
 
 if __name__ == "__main__":
     main()
+    # pass

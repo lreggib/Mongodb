@@ -1,0 +1,552 @@
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="ota_car_prod_sh1",cl_role="primary",instance="10.51.61.17:27017"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.61.17:27017/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="ota_car_prod_sh1",cl_role="secondary",instance="10.51.61.18:27017"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.61.18:27017/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="ota_car_prod_sh1",cl_role="secondary",instance="10.51.61.19:27017"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.61.19:27017/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="ota_car_prod_sh2",cl_role="primary",instance="10.51.61.20:27018"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.61.20:27018/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="ota_car_prod_sh2",cl_role="secondary",instance="10.51.61.21:27018"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.61.21:27018/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="ota_car_prod_sh2",cl_role="secondary",instance="10.51.61.22:27018"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.61.22:27018/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="ota_car_prod_cfg",cl_role="primary",instance="10.51.61.23:27019"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.61.23:27019/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="ota_car_prod_cfg",cl_role="secondary",instance="10.51.61.24:27019"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.61.24:27019/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="ota_car_prod_cfg",cl_role="secondary",instance="10.51.61.25:27019"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.61.25:27019/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="ota_car_prod_mongos",cl_role="mongos",instance="10.51.61.17:27020"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.61.17:27020/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="ota_car_prod_mongos",cl_role="mongos",instance="10.51.61.20:27020"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.61.20:27020/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="ota_car_prod_mongos",cl_role="mongos",instance="10.51.61.23:27020"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.61.23:27020/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="ota_car_prod_mongos",cl_role="mongos",instance="10.51.61.24:27020"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.61.24:27020/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="ota_car_prod_mongos",cl_role="mongos",instance="10.51.61.25:27020"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.61.25:27020/admin?authSource=admin"
+collect_all = true
+
+# ----------------------------
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="hub_store_prod_rs",cl_role="primary",instance="10.51.62.25:27017"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.62.25:27017/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="hub_store_prod_rs",cl_role="secondary",instance="10.51.62.26:27017"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.62.26:27017/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="hub_store_prod_rs",cl_role="secondary",instance="10.51.62.27:27017"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.62.27:27017/admin?authSource=admin"
+collect_all = true
+
+# ----------------------------
+
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="forward_store_prod_rs",cl_role="secondary",instance="10.51.62.25:27018"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.62.25:27018/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="forward_store_prod_rs",cl_role="primary",instance="10.51.62.26:27018"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.62.26:27018/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="forward_store_prod_rs",cl_role="secondary",instance="10.51.62.27:27018"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.62.27:27018/admin?authSource=admin"
+collect_all = true
+
+
+# ----------------------------
+
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="iov_mock_prod_rs",cl_role="secondary",instance="10.51.62.25:27019"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.62.25:27019/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="iov_mock_prod_rs",cl_role="secondary",instance="10.51.62.26:27019"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.62.26:27019/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="iov_mock_prod_rs",cl_role="primary",instance="10.51.62.27:27019"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.62.27:27019/admin?authSource=admin"
+collect_all = true
+
+
+# ----------------------------
+
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="hub_scatter_prod_rs",cl_role="secondary",instance="10.51.62.25:27020"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.62.25:27020/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="hub_scatter_prod_rs",cl_role="primary",instance="10.51.62.26:27020"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.62.26:27020/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="prod",cluster="hub_scatter_prod_rs",cl_role="secondary",instance="10.51.62.27:27020"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.62.27:27020/admin?authSource=admin"
+collect_all = true
+
+
+# ----------------------------
+
+
+# -------------------------------
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="ota_shard_test",cl_role="mongos",instance="10.51.102.19:37020"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.19:37020/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="ota_shard_test",cl_role="mongos",instance="10.51.102.21:37020"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.21:37020/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="ota_shard_test",cl_role="mongos",instance="10.51.102.20:37020"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.20:37020/admin?authSource=admin"
+collect_all = true
+
+# ---
+
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="ota_shard_test",cl_role="mongod_sh1",instance="10.51.102.19:37017"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.19:37017/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="ota_shard_test",cl_role="mongod_sh1",instance="10.51.102.20:37017"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.20:37017/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="ota_shard_test",cl_role="mongod_sh1",instance="10.51.102.21:37017"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.21:37017/admin?authSource=admin"
+collect_all = true
+# ---
+
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="ota_shard_test",cl_role="mongod_sh2",instance="10.51.102.19:37018"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.19:37018/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="ota_shard_test",cl_role="mongod_sh2",instance="10.51.102.20:37018"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.20:37018/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="ota_shard_test",cl_role="mongod_sh2",instance="10.51.102.21:37018"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.21:37018/admin?authSource=admin"
+collect_all = true
+# ---
+
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="ota_shard_test",cl_role="mongod_config",instance="10.51.102.19:37019"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.19:37019/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="ota_shard_test",cl_role="mongod_config",instance="10.51.102.20:37019"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.20:37019/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="ota_shard_test",cl_role="mongod_config",instance="10.51.102.21:37019"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.21:37019/admin?authSource=admin"
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="ota_shard_test",cl_role="mongod_config",instance="10.51.102.19:37019"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.19:37019/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="ota_shard_test",cl_role="mongod_config",instance="10.51.102.20:37019"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.20:37019/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="ota_shard_test",cl_role="mongod_config",instance="10.51.102.21:37019"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.21:37019/admin?authSource=admin"
+collect_all = true
+
+# ----------------------------
+
+
+# -------------------
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="iov_simulat_test_rs",cl_role="primary",instance="10.51.102.19:27019" }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.19:27019/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="iov_simulat_test_rs",cl_role="secondary",instance="10.51.102.20:27019" }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.20:27019/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="iov_simulat_test_rs",cl_role="secondary",instance="10.51.102.21:27019"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.21:27019/admin?authSource=admin"
+collect_all = true
+# ----------------------------
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="forward_store_test_rs",cl_role="secondary",instance="10.51.102.19:27018" }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.19:27018/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="forward_store_test_rs",cl_role="primary",instance="10.51.102.20:27018" }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.20:27018/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="forward_store_test_rs",cl_role="secondary",instance="10.51.102.21:27018"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.21:27018/admin?authSource=admin"
+collect_all = true
+
+# ----------------------------
+# ----------------------------
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="hub_store_test_rs",cl_role="primary",instance="10.51.102.19:27017" }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.19:27017/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="hub_store_test_rs",cl_role="secondary",instance="10.51.102.20:27017" }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.20:27017/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="hub_store_test_rs",cl_role="secondary",instance="10.51.102.21:27017"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.21:27017/admin?authSource=admin"
+collect_all = true
+
+# ----------------------------
+
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="dev_32960_rs",cl_role="master",instance="10.51.102.10:27017" }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.12:27017/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="dev_32960_rs",cl_role="secondary",instance="10.51.102.11:27017" }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.11:27017/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="dev_32960_rs",cl_role="secondary",instance="10.51.102.12:27017"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.10:27017/admin?authSource=admin"
+collect_all = true
+
+
+# ------------------------
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongos",instance="10.51.102.10:27021"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.10:27021/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongos",instance="10.51.102.12:27021"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.12:27021/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongos",instance="10.51.102.11:27021"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.11:27021/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongod_sh1",instance="10.51.102.10:27018"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.10:27018/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongod_sh1",instance="10.51.102.11:27018"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.11:27018/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongod_sh1",instance="10.51.102.12:27018"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.12:27018/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongod_sh2",instance="10.51.102.10:27019"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.10:27019/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongod_sh2",instance="10.51.102.11:27019"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.11:27019/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongod_sh2",instance="10.51.102.12:27019"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.12:27019/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongod_config",instance="10.51.102.10:27020"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.10:27020/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongod_config",instance="10.51.102.11:27020"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.11:27020/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongod_config",instance="10.51.102.12:27020"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.12:27020/admin?authSource=admin"
+collect_all = true
+
+
+
+# -------------------
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="iov_simulat_test_rs",cl_role="primary",instance="10.51.102.19:27019" }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.19:27019/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="iov_simulat_test_rs",cl_role="secondary",instance="10.51.102.20:27019" }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.20:27019/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="iov_simulat_test_rs",cl_role="secondary",instance="10.51.102.21:27019"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.21:27019/admin?authSource=admin"
+collect_all = true
+
+
+# ----------------------------
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="forward_store_test_rs",cl_role="secondary",instance="10.51.102.19:27018" }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.19:27018/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="forward_store_test_rs",cl_role="primary",instance="10.51.102.20:27018" }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.20:27018/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="forward_store_test_rs",cl_role="secondary",instance="10.51.102.21:27018"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.21:27018/admin?authSource=admin"
+collect_all = true
+
+# ----------------------------
+# ----------------------------
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="hub_store_test_rs",cl_role="primary",instance="10.51.102.19:27017" }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.19:27017/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="hub_store_test_rs",cl_role="secondary",instance="10.51.102.20:27017" }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.20:27017/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="test",cluster="hub_store_test_rs",cl_role="secondary",instance="10.51.102.21:27017"  }
+mongodb_uri = "mongodb://mongo_exporter:B4TLHFXYnP79H@10.51.102.21:27017/admin?authSource=admin"
+collect_all = true
+
+# ----------------------------
+
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="dev_32960_rs",cl_role="master",instance="10.51.102.10:27017" }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.12:27017/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="dev_32960_rs",cl_role="secondary",instance="10.51.102.11:27017" }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.11:27017/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="dev_32960_rs",cl_role="secondary",instance="10.51.102.12:27017"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.10:27017/admin?authSource=admin"
+collect_all = true
+
+# ------------------------
+
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="nightingale-rs",cl_role="master",instance="10.51.102.10:13333" }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.10:13333/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="nightingale-rs",cl_role="secondary",instance="10.51.102.11:13333" }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.11:13333/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="nightingale-rs",cl_role="secondary",instance="10.51.102.12:13333"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.12:13333/admin?authSource=admin"
+collect_all = true
+
+# ------------------------
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongos",instance="10.51.102.10:27021"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.10:27021/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongos",instance="10.51.102.12:27021"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.12:27021/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongos",instance="10.51.102.11:27021"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.11:27021/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongod_sh1",instance="10.51.102.10:27018"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.10:27018/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongod_sh1",instance="10.51.102.11:27018"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.11:27018/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongod_sh1",instance="10.51.102.12:27018"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.12:27018/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongod_sh2",instance="10.51.102.10:27019"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.10:27019/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongod_sh2",instance="10.51.102.11:27019"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.11:27019/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongod_sh2",instance="10.51.102.12:27019"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.12:27019/admin?authSource=admin"
+collect_all = true
+
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongod_config",instance="10.51.102.10:27020"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.10:27020/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongod_config",instance="10.51.102.11:27020"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.11:27020/admin?authSource=admin"
+collect_all = true
+[[instances]]
+log_level = "warn"
+labels = { env="dev",cluster="ota_shard_dev",cl_role="mongod_config",instance="10.51.102.12:27020"  }
+mongodb_uri = "mongodb://root:VZwy72L6RYWFPA6M@10.51.102.12:27020/admin?authSource=admin"
+collect_all = true
+
+# ------------------------
+
+
+
