@@ -1,10 +1,6 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 # coding=utf-8
-'''
-@author: biggerl
-@time: 2021/2/24 11:06
-'''
 
 from dingtalkchatbot.chatbot import DingtalkChatbot
 
